@@ -1,0 +1,7 @@
+extends layout.pug
+
+block content
+  h1= title
+  form(action="/cmd", method="put")
+    input(type="text", name="ip", id="ip" placeholder="Enter an IP to ping and press enter!")
+  div#result

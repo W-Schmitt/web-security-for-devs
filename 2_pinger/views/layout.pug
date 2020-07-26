@@ -1,0 +1,17 @@
+html
+  head
+    block css
+      link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+      link(type="text/css" rel="stylesheet" href="vendor/materialize/css/materialize.min.css"  media="screen,projection")
+      link(type="text/css" rel="stylesheet" href="client/style.css"  media="screen,projection")
+    block head_scripts
+    title= title
+  body
+    block menu
+    div.container
+      block content
+    block footer
+
+    block body_scripts
+      script(type="text/javascript" src="vendor/materialize/js/materialize.min.js")
+      script(type="text/javascript" src="public/js/client.js")
